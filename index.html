@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Pasantías - EXITOS 3 C.A</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>EXITOS 3</h1>
+        <p>Propuesta: Informe de Pasantías - Administración de Empresas Mención Informática</p>
+    </header>
+
+    <main>
+        
+        <section id="empresa-info">
+            <h2>Acerca de la Empresa</h2>
+            <p>Breve descripción de la compañía, su historia y su actividad.</p>
+        </section>
+
+        <section id="contacto-sedes">
+    <h2>Información y Contacto de Sedes</h2>
+    <p>Haga clic en una sede para ver sus datos de contacto:</p>
+
+    <div class="botones-sedes">
+        <button onclick="mostrarSede('sede-principal')">Contacto Sede Bejuma</button>
+        <button onclick="mostrarSede('sede-secundaria')">Contacto Sede Nirgua</button>
+    </div>
+
+    <div id="sede-principal" class="info-sede" style="display: none;">
+        <h3>Sede Principal</h3>
+        <p><strong>Teléfono:</strong> +58 (212) 555-1234</p>
+        <p><strong>Dirección:</strong> Av. Libertador, Edif. Central, Caracas.</p>
+    </div>
+
+    <div id="sede-secundaria" class="info-sede" style="display: none;">
+        <h3>Sede Sucursal</h3>
+        <p><strong>Teléfono:</strong> +58 (241) 555-5678</p>
+        <p><strong>Dirección:</strong> Calle Valencia, C.C. Las Palmas, Valencia.</p>
+    </div>
+
+</section>
+
+        <section id="calculadora">
+    <h2>Calculadora de Cuotas y Financiamiento</h2>
+    
+    <div class="calculadora-form">
+        <div>
+            <label for="precioProducto">Precio del Producto ($):</label>
+            <input type="number" id="precioProducto" min="1" required placeholder="Ej: 500">
+        </div>
+        
+        <div>
+            <label for="numCuotas">Número de Cuotas:</label>
+            <select id="numCuotas" required>
+                <option value="" disabled selected>Selecciona el plazo</option>
+                <option value="6">6 Cuotas</option>
+                <option value="12">12 Cuotas</option>
+                <option value="18">18 Cuotas</option>
+                <option value="24">24 Cuotas</option>
+            </select>
+        <div>
+            <label for="incluirEnvio">
+                <input type="checkbox" id="incluirEnvio"> Incluir Envío Nacional (Costo fijo: $10.00)
+            </label>
+        </div>
+       
+        <button onclick="calcularCuotas()">Calcular Cuotas</button>
+        
+        <div id="resultadoCalculadora">
+            <p>Ingresa los datos para ver los resultados.</p>
+        </div>
+    </div>
+
+</section>
+        
+        <section id="productos-envios">
+    <h2>Catálogo de Productos y Precios</h2>
+    
+    <div class="categoria-acordeon">
+        <button class="boton-acordeon" onclick="alternarContenido('contenido-tvs')">
+            Televisores (Smart TV)
+        </button>
+        <div id="contenido-tvs" class="contenido-acordeon">
+            <p><strong>Producto 1:</strong> 55" OLED 4K | Precio: $850</p>
+            <div class="stock-info">
+                <span>Stock Sede Bejuma: <span id="stock-tv1-p">DISPONIBLE</span></span> | 
+                <span>Stock Sede Nirgua: <span id="stock-tv1-s">AGOTADO</span></span>
+            </div>
+            
+            <hr>
+            <p><strong>Producto 2:</strong> 40" LED Full HD | Precio: $320</p>
+            <div class="stock-info">
+                <span>Stock Sede Bejuma: <span id="stock-tv2-p">DISPONIBLE</span></span> | 
+                <span>Stock Sede Nirgua: <span id="stock-tv2-s">DISPONIBLE</span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="categoria-acordeon">
+        <button class="boton-acordeon" onclick="alternarContenido('contenido-telefonos')">
+            Teléfonos Inteligentes (Smartphones)
+        </button>
+        <div id="contenido-telefonos" class="contenido-acordeon">
+            <p><strong>Modelo A:</strong> Premium X-Plus | Precio: $799</p>
+            <div class="stock-info">
+                <span>Stock Sede Bejuma: <span id="stock-telA-p">DISPONIBLE</span></span> | 
+                <span>Stock Sede Nirgua: <span id="stock-telA-s">DISOTIBLE</span></span>
+            </div>
+            <hr>
+            <p><strong>Modelo B:</strong> Básico Lite | Precio: $210</p>
+            <div class="stock-info">
+                <span>Stock Sede Bejuma: <span id="stock-telB-p">AGOTADO</span></span> | 
+                <span>Stock Sede Nirgua: <span id="stock-telB-s">DISPONIBLE</span></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="categoria-acordeon">
+        <button class="boton-acordeon" onclick="alternarContenido('contenido-tablets')">
+            Tabletas y Accesorios
+        </button>
+        <div id="contenido-tablets" class="contenido-acordeon">
+            <p><strong>Tableta 1:</strong> 10.5" Pro Edition | Precio: $450</p>
+            <div class="stock-info">
+                <span>Stock Sede Bejuma: <span id="stock-tab1-p">DISPONIBLE</span></span> | 
+                <span>Stock Sede Nirgua: <span id="stock-tab1-s">AGOTADO</span></span>
+            </div>
+        </div>
+    </div>
+    
+    <h3 style="margin-top: 50px;">Información Importante de Envíos</h3>
+    <p>Todos los envíos nacionales se realizan a través de [Nombre de la Empresa de Mensajería] con costo y seguro detallado en nuestra calculadora de cuotas.</p>
+</section>
+        
+    </main>
+
+    <footer>
+        <p>Desarrollado como Proyecto de Pasantías. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
