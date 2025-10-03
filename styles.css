@@ -1,0 +1,206 @@
+body {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff; /* Color azul (ejemplo de color de la marca) */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* --- ESTILOS ESPECÍFICOS PARA LA CALCULADORA --- */
+#calculadora {
+    max-width: 450px;
+    margin: 40px auto; /* Centra el bloque */
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.calculadora-form div {
+    margin-bottom: 15px;
+}
+
+#calculadora input, #calculadora select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Importante para que el padding no desborde el ancho */
+}
+
+#calculadora button {
+    width: 100%;
+    background-color: #28a745; /* Botón verde */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#calculadora button:hover {
+    background-color: #218838;
+}
+
+#resultadoCalculadora {
+    margin-top: 25px;
+    padding: 15px;
+    border-top: 2px solid #007bff;
+    background-color: #e6f0ff; /* Fondo claro para el resultado */
+    border-radius: 0 0 10px 10px;
+}
+/* --- ESTILOS DE CONTACTO Y SEDES --- */
+#contacto-sedes {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.botones-sedes button {
+    background-color: #007bff; /* Color azul para los botones de sede */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.botones-sedes button:hover {
+    background-color: #0056b3;
+}
+
+.info-sede {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    text-align: left;
+}
+/* --- ESTILOS DE LA ZONA DE PRODUCTOS (ACORDEÓN) --- */
+#productos-envios {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.boton-acordeon {
+    background-color: #f7f7f7; /* Fondo del botón */
+    color: #444; 
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.boton-acordeon:hover {
+    background-color: #ddd;
+}
+
+.contenido-acordeon {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    /* Esto es clave: inicialmente ocultamos con CSS, JS se encarga de cambiar a 'block' */
+    display: none; 
+}
+
+.contenido-acordeon p {
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+
+/* --- ESTILOS PARA LA VISUALIZACIÓN DE STOCK (Stock por Sede) --- */
+.stock-info {
+    font-size: 0.9em;
+    padding: 5px 0 10px 0;
+    margin-bottom: 10px;
+    border-top: 1px solid #eee;
+}
+
+.stock-info span {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/* Colores para el estado del stock */
+/* Aplicaremos colores específicos a los IDs que pusimos en el HTML */
+#stock-tv1-p, #stock-tv2-p, #stock-tv2-s, #stock-telA-p, #stock-telA-s, #stock-telB-s, #stock-tab1-p {
+    color: green; /* DISPONIBLE */
+    font-weight: 900;
+}
+
+#stock-tv1-s, #stock-telB-p, #stock-tab1-s {
+    color: red; /* AGOTADO */
+    font-weight: 900;
+}
+/* --- ESTILOS DE LA ZONA DE FINANCIAMIENTO (MENSAJES) --- */
+
+.botones-financiamiento {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botones-financiamiento button {
+    background-color: #ff9900; /* Naranja/Ámbar para distinguir */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.botones-financiamiento button:hover {
+    background-color: #cc7a00;
+}
+
+.info-financiamiento {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    border: 3px solid #ff9900;
+    border-radius: 10px;
+    background-color: #fff9f0;
+    text-align: left;
+}
+
+.info-financiamiento h3 {
+    text-align: center;
+    color: #cc7a00;
+    margin-top: 0;
+}
+
+.enlace-app {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 15px;
+}

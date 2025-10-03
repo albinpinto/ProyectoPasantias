@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Pasantías - EXITOS 3 C.A</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>EXITOS 3</h1>
+        <p>Propuesta: Informe de Pasantías - Administración de Empresas Mención Informática</p>
+    </header>
+
+    <main>
+        
+        <section id="empresa-info">
+            <h2>Acerca de la Empresa</h2>
+            <p>Breve descripción de la compañía, su historia y su actividad.</p>
+        </section>
+
+        <section id="contacto-sedes">
+    <h2>Información y Contacto de Sedes</h2>
+    <p>Haga clic en una sede para ver sus datos de contacto:</p>
+
+    <div class="botones-sedes">
+        <button onclick="mostrarSede('sede-principal')">Contacto Sede Bejuma</button>
+        <button onclick="mostrarSede('sede-secundaria')">Contacto Sede Nirgua</button>
+    </div>
+
+    <div id="sede-principal" class="info-sede" style="display: none;">
+        <h3>Sede Principal</h3>
+        <p><strong>Teléfono:</strong> +58 (212) 555-1234</p>
+        <p><strong>Dirección:</strong> Av. Libertador, Edif. Central, Caracas.</p>
+    </div>
+
+    <div id="sede-secundaria" class="info-sede" style="display: none;">
+        <h3>Sede Sucursal</h3>
+        <p><strong>Teléfono:</strong> +58 (241) 555-5678</p>
+        <p><strong>Dirección:</strong> Calle Valencia, C.C. Las Palmas, Valencia.</p>
+    </div>
+
+</section>
+
+        <section id="calculadora">
+    <h2>Opciones de Financiamiento Disponibles</h2>
+    <p>Haz clic en una entidad para ver sus condiciones de pago quincenales:</p>
+
+    <div class="botones-financiamiento">
+        <button onclick="alternarMensaje('info-naranja')">Tu Zona Naranja</button>
+        <button onclick="alternarMensaje('info-krece')">Krece</button>
+    </div>
+
+    <div id="info-naranja" class="info-financiamiento" style="display: none;">
+        <h3>Tu Zona Naranja</h3>
+        <p>Tu zona naranja ofrece pagos de cuotas **quincenales** de **3, 4, 5, 6, 9 y 12 pagos**, los cuales se comienzan a cancelar 15 días después del día del pago de la inicial. La **inicial es del 30%** del precio del equipo deseado.</p>
+        <p class="enlace-app">Para consultar Tu Zona Naranja y su catálogo disponible da clic aquí y obtén la app: <a href="[https://play.google.com/store/apps/details?id=com.techlandllc.tuzonanaranja&pli=1]" target="_blank">ENLACE DE TU ZONA NARANJA</a></p>
+    </div>
+    
+    <div id="info-krece" class="info-financiamiento" style="display: none;">
+        <h3>Krece</h3>
+        <p>Krece cuenta con cuotas **quincenales** de **3, 4 y 6 pagos**, los cuales se comienzan a cancelar 15 días después del día del pago de la inicial. La inicial puedes elegir entre dar el **40%, 45% o 50%** de inicial del precio del equipo deseado.</p>
+        <p class="enlace-app">Para consultar Krece haz clic aquí y obtén la app: <a href="[https://play.google.com/store/apps/details?id=com.application.krece&hl=es]" target="_blank">ENLACE DE KRECE</a></p>
+    </div>
+
+    <hr style="margin: 40px auto;">
+
+    <p>*(Este es el espacio donde se agregará la calculadora simple de cuotas si se requiere)*</p>
+
+</section>
+            
+    <div class="categoria-acordeon">
+        <button class="boton-acordeon" onclick="alternarContenido('contenido-tvs')">
+            Televisores (Smart TV)
+        </button>
+        <div id="contenido-tvs" class="contenido-acordeon">
+            <p><strong>Producto 1:</strong> 55" OLED 4K | Precio: $850</p>
+            <div class="stock-info">
+                <span>Stock Sede Bejuma: <span id="stock-tv1-p">DISPONIBLE</span></span> | 
+                <span>Stock Sede Nirgua: <span id="stock-tv1-s">AGOTADO</span></span>
+            </div>
+            
+            <hr>
+            <p><strong>Producto 2:</strong> 40" LED Full HD | Precio: $320</p>
+            <div class="stock-info">
+                <span>Stock Sede Bejuma: <span id="stock-tv2-p">DISPONIBLE</span></span> | 
+                <span>Stock Sede Nirgua: <span id="stock-tv2-s">DISPONIBLE</span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="categoria-acordeon">
+        <button class="boton-acordeon" onclick="alternarContenido('contenido-telefonos')">
+            Teléfonos Inteligentes (Smartphones)
+        </button>
+        <div id="contenido-telefonos" class="contenido-acordeon">
+            <p><strong>Modelo A:</strong> Premium X-Plus | Precio: $799</p>
+            <div class="stock-info">
+                <span>Stock Sede Bejuma: <span id="stock-telA-p">DISPONIBLE</span></span> | 
+                <span>Stock Sede Nirgua: <span id="stock-telA-s">DISOTIBLE</span></span>
+            </div>
+            <hr>
+            <p><strong>Modelo B:</strong> Básico Lite | Precio: $210</p>
+            <div class="stock-info">
+                <span>Stock Sede Bejuma: <span id="stock-telB-p">AGOTADO</span></span> | 
+                <span>Stock Sede Nirgua: <span id="stock-telB-s">DISPONIBLE</span></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="categoria-acordeon">
+        <button class="boton-acordeon" onclick="alternarContenido('contenido-tablets')">
+            Tabletas y Accesorios
+        </button>
+        <div id="contenido-tablets" class="contenido-acordeon">
+            <p><strong>Tableta 1:</strong> 10.5" Pro Edition | Precio: $450</p>
+            <div class="stock-info">
+                <span>Stock Sede Bejuma: <span id="stock-tab1-p">DISPONIBLE</span></span> | 
+                <span>Stock Sede Nirgua: <span id="stock-tab1-s">AGOTADO</span></span>
+            </div>
+        </div>
+    </div>
+    
+    <h3 style="margin-top: 50px;">Información Importante de Envíos</h3>
+    <p>Todos los envíos nacionales se realizan a través de [Nombre de la Empresa de Mensajería] con costo y seguro detallado en nuestra calculadora de cuotas.</p>
+</section>
+        
+    </main>
+
+    <footer>
+        <p>Desarrollado como Proyecto de Pasantías. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
