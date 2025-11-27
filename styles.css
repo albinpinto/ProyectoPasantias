@@ -6,8 +6,8 @@ body {
 }
 
 header {
-    background-color: #007bff; /* Color azul (ejemplo de color de la marca) */
-    color: white;
+    background-color: #000000; /* Color azul (ejemplo de color de la marca) */
+    color: rgba(0, 253, 0, 0.849);
     padding: 20px;
     text-align: center;
 }
@@ -63,7 +63,7 @@ header {
 }
 /* --- ESTILOS DE CONTACTO Y SEDES --- */
 #contacto-sedes {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
     border-top: 1px solid #ccc;
@@ -95,7 +95,7 @@ header {
 }
 /* --- ESTILOS DE LA ZONA DE PRODUCTOS (ACORDEÓN) --- */
 #productos-envios {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
 }
@@ -139,7 +139,7 @@ header {
     font-size: 0.9em;
     padding: 5px 0 10px 0;
     margin-bottom: 10px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #000000;
 }
 
 .stock-info span {
@@ -149,14 +149,14 @@ header {
 
 /* Colores para el estado del stock */
 /* Aplicaremos colores específicos a los IDs que pusimos en el HTML */
-#stock-tv1-p, #stock-tv2-p, #stock-tv2-s, #stock-telA-p, #stock-telA-s, #stock-telB-s, #stock-tab1-p {
+#stock-tv1-p, #stock-tv2-p, #stock-tv2-s, #stock-telA-p, #stock-telA-s, #stock-telB-s, #stock-tab1-p, #stock-xi2-p  {
     color: green; /* DISPONIBLE */
     font-weight: 900;
 }
 
 #stock-tv1-s, #stock-telB-p, #stock-tab1-s {
-    color: red; /* AGOTADO */
-    font-weight: 900;
+    color: RED; /* NO DISPONIBLE */
+        font-weight: 900;
 }
 /* --- ESTILOS DE LA ZONA DE FINANCIAMIENTO (MENSAJES) --- */
 
@@ -203,4 +203,63 @@ header {
     text-align: center;
     font-size: 0.9em;
     margin-top: 15px;
+}
+/* --- ESTILOS PARA LAS DESCRIPCIONES DE PRODUCTO --- */
+
+.descripcion-producto {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    border-left: 2px solid #ccc;
+}
+
+
+/* --- ESTILOS PARA LOS SUB-ACORDEONES (MARCAS) --- */
+
+.boton-subacordeon {
+    background-color: #e6f7ff; /* Fondo más claro para indicar anidación */
+    color: #007bff; 
+    cursor: pointer;
+    padding: 12px 18px;
+    width: 100%;
+    border: 1px solid #cceeff; /* Borde sutil */
+    border-radius: 4px;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.boton-subacordeon:hover {
+    background-color: #cceeff;
+}
+
+.contenido-subacordeon {
+    /* El contenido anidado debe tener un padding diferente */
+    padding: 10px 15px 15px 15px;
+    background-color: #ffffff; 
+    border-left: 3px solid #007bff; /* Barra lateral para indicar dónde empieza/acaba */
+    margin-bottom: 10px;
+    /* Esto es manejado por JavaScript, pero es bueno tener la referencia visual */
+    
+/* ESTE ES EL CAMBIO CLAVE para que esté cerrado al inicio */
+    display: none; 
+}
+.imagen-producto {
+    /* Establece un ancho fijo (ej. 150px) */
+    width: 150px; 
+    /* Establece un alto fijo (ej. 150px) para mantener un cuadrado */
+    height: 150px; 
+    
+    /* Importante: Añade esta propiedad */
+    /* Mantiene la proporción de la imagen dentro del nuevo tamaño */
+    object-fit: contain; 
+    
+    /* Otros estilos de margen para que se vea bien al lado del texto */
+    margin-right: 15px;
+    border: 1px solid #ccc; /* Opcional: añade un borde ligero */
 }

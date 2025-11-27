@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informe de Pasantías - EXITOS 3 C.A</title>
+    <title>Informe de Pasantías - EXITOS C.A</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>EXITOS 3</h1>
+        <h1>EXITOS </h1>
         <p>Propuesta: Informe de Pasantías - Administración de Empresas Mención Informática</p>
     </header>
 
@@ -29,16 +29,16 @@
         <button onclick="mostrarSede('sede-secundaria')">Contacto Sede Nirgua</button>
     </div>
 
-    <div id="sede-principal" class="info-sede" style="display: none;">
+    <div id="Sede-principal" class="info-sede" style="display: none;">
         <h3>Sede Bejuma</h3>
-        <p><strong>Teléfono:</strong> +58 (212) 555-1234</p>
-        <p><strong>Dirección:</strong> Av. Libertador, Edif. Central, Caracas.</p>
+        <p><strong>Teléfono:</strong> +58 (424) 520-7708</p>
+        <p><strong>Dirección:</strong> Av. bolivar, CC Nasser Local N° 3 Diagonal a la licoreria Los Dos Amigos. Bejima Estado Carabobo.</p>
     </div>
 
-    <div id="sede-secundaria" class="info-sede" style="display: none;">
+    <div id="Sede-secundaria" class="info-sede" style="display: none;">
         <h3>Sede Nirgua</h3>
-        <p><strong>Teléfono:</strong> +58 (241) 555-5678</p>
-        <p><strong>Dirección:</strong> Calle Valencia, C.C. Las Palmas, Valencia.</p>
+        <p><strong>Teléfono:</strong> +58 (424) 520-7708</p>
+        <p><strong>Dirección:</strong> Av. bolivar, al Lado del Banco de Venezuela (MOVISTAR) Nirgua.</p>
     </div>
 
 </section>
@@ -54,7 +54,7 @@
 
     <div id="info-naranja" class="info-financiamiento" style="display: none;">
         <h3>Tu Zona Naranja</h3>
-        <p>Tu zona naranja ofrece pagos de cuotas **quincenales** de **3, 4, 5, 6, 9 y 12 pagos**, los cuales se comienzan a cancelar 15 días después del día del pago de la inicial. La **inicial es del 30%** del precio del equipo deseado.</p>
+        <p>Tu zona naranja ofrece pagos de cuotas **quincenales** de **3, 4, 5 y 6 pagos**, los cuales se comienzan a cancelar 15 días después del día del pago de la inicial. La **inicial es del 30%** del precio del equipo deseado.</p>
         <p class="enlace-app">Para consultar Tu Zona Naranja y su catálogo disponible da clic aquí y obtén la app: <a href="https://play.google.com/store/apps/details?id=com.techlandllc.tuzonanaranja&pli=1" target="_blank">ENLACE DE TU ZONA NARANJA</a></p>
     </div>
     
@@ -66,62 +66,1019 @@
 
     <hr style="margin: 40px auto;">
 
-    <p>*(Este es el espacio donde se agregará la calculadora simple de cuotas si se requiere)*</p>
-
-</section>
-            
+   
+<section id="productos-envios">
+    <h2>Catálogo de Productos y Precios</h2>
+    
     <div class="categoria-acordeon">
         <button class="boton-acordeon" onclick="alternarContenido('contenido-tvs')">
-            Televisores (Smart TV)
+            1. Televisores (Smart TV)
         </button>
         <div id="contenido-tvs" class="contenido-acordeon">
-            <p><strong>Producto 1:</strong> 55" OLED 4K | Precio: $850</p>
-            <div class="stock-info">
-                <span>Stock Sede Bejuma: <span id="stock-tv1-p">DISPONIBLE</span></span> | 
-                <span>Stock Sede Nirgua: <span id="stock-tv1-s">AGOTADO</span></span>
-            </div>
             
+            <div class="detalle-producto">
+                <img src="images/imagen_tv1.jpg" alt="Televisor TCL 32 Pulgadas HD" class="imagen-producto"> 
+                <div class="info-producto">
+                    <p><strong>Producto:</strong> TV 32" HD | Precio: $255</p>
+                    <p class="descripcion-producto">Modelo ideal para ambientar espacios, videojuegos y más.</p>
+                    <div class="stock-info">
+                        <span>Stock Sede Principal: <span id="stock-tv1-p">DISPONIBLE</span></span> |
+                        <span>Stock Sede Sucursal: <span id="stock-tv1-s">DISPONIBLE</span></span>
+                    </div>
+                </div>
+            </div>
             <hr>
-            <p><strong>Producto 2:</strong> 40" LED Full HD | Precio: $320</p>
-            <div class="stock-info">
-                <span>Stock Sede Bejuma: <span id="stock-tv2-p">DISPONIBLE</span></span> | 
-                <span>Stock Sede Nirgua: <span id="stock-tv2-s">DISPONIBLE</span></span>
+            
+            <div class="detalle-producto">
+                <img src="images/imagen_tv2.jpg" alt="Televisor 40 LED Full HD" class="imagen-producto"> 
+                <div class="info-producto">
+                    <p><strong>Producto:</strong> 40" LED Full HD | Precio: $320</p>
+                    <p class="descripcion-producto">Modelo económico y funcional. Perfecto para habitaciones secundarias o como televisor básico de uso diario.</p>
+                    <div class="stock-info">
+                        <span>Stock Sede Principal: <span id="stock-tv2-p">AGOTADO</span></span> | 
+                        <span>Stock Sede Sucursal: <span id="stock-tv2-s">AGOTADO</span></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="categoria-acordeon">
         <button class="boton-acordeon" onclick="alternarContenido('contenido-telefonos')">
-            Teléfonos Inteligentes (Smartphones)
+            2. Teléfonos Inteligentes (Smartphones)
         </button>
         <div id="contenido-telefonos" class="contenido-acordeon">
-            <p><strong>Modelo A:</strong> Premium X-Plus | Precio: $799</p>
-            <div class="stock-info">
-                <span>Stock Sede Bejuma: <span id="stock-telA-p">DISPONIBLE</span></span> | 
-                <span>Stock Sede Nirgua: <span id="stock-telA-s">DISOTIBLE</span></span>
+            
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-iphone')">
+                    Marca: IPHONE
+                </button>
+                <div id="sub-iphone" class="contenido-subacordeon">
+                    
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_ip1.jpg" alt="[MODELO IPHONE 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 1:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-ip1-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-ip1-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-            <hr>
-            <p><strong>Modelo B:</strong> Básico Lite | Precio: $210</p>
-            <div class="stock-info">
-                <span>Stock Sede Bejuma: <span id="stock-telB-p">AGOTADO</span></span> | 
-                <span>Stock Sede Nirgua: <span id="stock-telB-s">DISPONIBLE</span></span>
+            
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-samsung')">
+                    Marca: SAMSUNG
+                </button>
+                <div id="sub-samsung" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/imagen_telA.jpg" alt="Smartphone Samsung Galaxy S" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 1:</strong> Galaxy S24 Ultra | Precio: $1199</p>
+                            <p class="descripcion-producto">El modelo más reciente de Samsung con cámara de 200MP y procesador de última generación. Incluye lápiz óptico S-Pen.</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-telA-p">DISPONIBLE</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-telA-s">DISPONIBLE</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/imagen_tel_samsung_b.jpg" alt="Smartphone Samsung Galaxy A55" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 2:</strong> Galaxy A55 | Precio: $450</p>
+                            <p class="descripcion-producto">Teléfono de gama media con excelente rendimiento para redes sociales y una gran batería que dura todo el día.</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-telB-p">DISPONIBLE</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-telB-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_sams3.jpg" alt="[MODELO SAMSUNG 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 3:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-sams3-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-sams3-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_sams4.jpg" alt="[MODELO SAMSUNG 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 4:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-sams4-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-sams4-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_sams5.jpg" alt="[MODELO SAMSUNG 5]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 5:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-sams5-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-sams5-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_sams6.jpg" alt="[MODELO SAMSUNG 6]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 6:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-sams6-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-sams6-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_sams7.jpg" alt="[MODELO SAMSUNG 7]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 7:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-sams7-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-sams7-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_sams8.jpg" alt="[MODELO SAMSUNG 8]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 8:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-sams8-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-sams8-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_sams9.jpg" alt="[MODELO SAMSUNG 9]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 9:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-sams9-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-sams9-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_sams10.jpg" alt="[MODELO SAMSUNG 10]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 10:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-sams10-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-sams10-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_sams11.jpg" alt="[MODELO SAMSUNG 11]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 11:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-sams11-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-sams11-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_sams12.jpg" alt="[MODELO SAMSUNG 12]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 12:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-sams12-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-sams12-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_sams13.jpg" alt="[MODELO SAMSUNG 13]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 13:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-sams13-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-sams13-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-xiaomi')">
+                    Marca: XIAOMI
+                </button>
+                <div id="sub-xiaomi" class="contenido-subacordeon">
+                    
+                    <div class="detalle-producto">
+                        <img src="images/Redmi_A5.JPG.jpg" alt="[MODELO XIAOMI 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Redmi A5</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.88" HD+, 120Hz.<br>
+                                •Cámara Principal: Dual 32MP con IA.<br>
+                                •Batería: 5200 mAh.<br>
+                                •Procesador: Octa-core (UNISOC T7250).<br>
+                                •RAM: 3GB o 4GB.<br>
+                                •ROM: 64GB/128GB (Expandible).<br>
+                                •Seguridad: Lector de huellas lateral y Desbloqueo facial.<br>
+                            </p>
+
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-xi2-p">Consultar Disponibilidad</span></span> 
+                            </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi2.jpg" alt="[MODELO XIAOMI 2]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 2:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi2-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi2-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi3.jpg" alt="[MODELO XIAOMI 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 3:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi3-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi3-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi4.jpg" alt="[MODELO XIAOMI 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 4:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi4-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi4-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi5.jpg" alt="[MODELO XIAOMI 5]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 5:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi5-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi5-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi6.jpg" alt="[MODELO XIAOMI 6]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 6:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi6-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi6-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi7.jpg" alt="[MODELO XIAOMI 7]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 7:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi7-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi7-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi8.jpg" alt="[MODELO XIAOMI 8]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 8:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi8-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi8-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi9.jpg" alt="[MODELO XIAOMI 9]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 9:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi9-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi9-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi10.jpg" alt="[MODELO XIAOMI 10]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 10:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi10-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi10-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi11.jpg" alt="[MODELO XIAOMI 11]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 11:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi11-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi11-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi12.jpg" alt="[MODELO XIAOMI 12]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 12:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi12-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi12-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi13.jpg" alt="[MODELO XIAOMI 13]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 13:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi13-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi13-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi14.jpg" alt="[MODELO XIAOMI 14]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 14:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi14-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi14-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi15.jpg" alt="[MODELO XIAOMI 15]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 15:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi15-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi15-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_xi16.jpg" alt="[MODELO XIAOMI 16]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 16:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-xi16-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-xi16-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-motorola')">
+                    Marca: MOTOROLA
+                </button>
+                <div id="sub-motorola" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_mot1.jpg" alt="[MODELO MOTOROLA 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 1:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-mot1-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-mot1-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_mot2.jpg" alt="[MODELO MOTOROLA 2]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 2:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-mot2-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-mot2-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_mot3.jpg" alt="[MODELO MOTOROLA 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 3:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-mot3-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-mot3-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_mot4.jpg" alt="[MODELO MOTOROLA 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 4:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-mot4-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-mot4-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_mot5.jpg" alt="[MODELO MOTOROLA 5]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 5:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-mot5-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-mot5-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_mot6.jpg" alt="[MODELO MOTOROLA 6]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 6:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-mot6-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-mot6-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-realme')">
+                    Marca: REALME
+                </button>
+                <div id="sub-realme" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_re1.jpg" alt="[MODELO REALME 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 1:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-re1-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-re1-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_re2.jpg" alt="[MODELO REALME 2]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 2:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-re2-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-re2-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_re3.jpg" alt="[MODELO REALME 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 3:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-re3-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-re3-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_re4.jpg" alt="[MODELO REALME 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 4:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-re4-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-re4-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-honor')">
+                    Marca: HONOR
+                </button>
+                <div id="sub-honor" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_hon1.jpg" alt="[MODELO HONOR 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 1:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-hon1-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-hon1-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_hon2.jpg" alt="[MODELO HONOR 2]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 2:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-hon2-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-hon2-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_hon3.jpg" alt="[MODELO HONOR 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 3:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-hon3-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-hon3-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_hon4.jpg" alt="[MODELO HONOR 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 4:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-hon4-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-hon4-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_hon5.jpg" alt="[MODELO HONOR 5]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 5:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-hon5-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-hon5-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_hon6.jpg" alt="[MODELO HONOR 6]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 6:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-hon6-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-hon6-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_hon7.jpg" alt="[MODELO HONOR 7]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 7:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-hon7-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-hon7-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_hon8.jpg" alt="[MODELO HONOR 8]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 8:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-hon8-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-hon8-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_hon9.jpg" alt="[MODELO HONOR 9]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 9:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-hon9-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-hon9-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_hon10.jpg" alt="[MODELO HONOR 10]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 10:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-hon10-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-hon10-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-infinix')">
+                    Marca: INFINIX
+                </button>
+                <div id="sub-infinix" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_inf1.jpg" alt="[MODELO INFINIX 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 1:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-inf1-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-inf1-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_inf2.jpg" alt="[MODELO INFINIX 2]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 2:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-inf2-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-inf2-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_inf3.jpg" alt="[MODELO INFINIX 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 3:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-inf3-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-inf3-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_inf4.jpg" alt="[MODELO INFINIX 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 4:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-inf4-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-inf4-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_inf5.jpg" alt="[MODELO INFINIX 5]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 5:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-inf5-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-inf5-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_inf6.jpg" alt="[MODELO INFINIX 6]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 6:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-inf6-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-inf6-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_inf7.jpg" alt="[MODELO INFINIX 7]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 7:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-inf7-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-inf7-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_inf8.jpg" alt="[MODELO INFINIX 8]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 8:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-inf8-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-inf8-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_inf9.jpg" alt="[MODELO INFINIX 9]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 9:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-inf9-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-inf9-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_inf10.jpg" alt="[MODELO INFINIX 10]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 10:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-inf10-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-inf10-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-tecno')">
+                    Marca: TECNO
+                </button>
+                <div id="sub-tecno" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_tec1.jpg" alt="[MODELO TECNO 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 1:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-tec1-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-tec1-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_tec2.jpg" alt="[MODELO TECNO 2]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 2:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-tec2-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-tec2-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_tec3.jpg" alt="[MODELO TECNO 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 3:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-tec3-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-tec3-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_tec4.jpg" alt="[MODELO TECNO 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 4:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-tec4-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-tec4-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_tec5.jpg" alt="[MODELO TECNO 5]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 5:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-tec5-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-tec5-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_tec6.jpg" alt="[MODELO TECNO 6]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 6:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-tec6-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-tec6-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_tec7.jpg" alt="[MODELO TECNO 7]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 7:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-tec7-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-tec7-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                        <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-logic')">
+                    Marca: LOGIC
+                </button>
+                <div id="sub-logic" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/placeholder_log1.jpg" alt="[MODELO LOGIC 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Modelo 1:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-log1-p">AGOTADO</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-log1-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    <div class="categoria-acordeon">
+        <button class="boton-acordeon" onclick="alternarContenido('contenido-tablets')">
+            3. Tabletas
+        </button>
+        <div id="contenido-tablets" class="contenido-acordeon">
+            
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-apple-tab')">
+                    Marca: Apple
+                </button>
+                <div id="sub-apple-tab" class="contenido-subacordeon">
+                    
+                    <div class="detalle-producto">
+                        <img src="images/imagen_tab1.jpg" alt="Tableta 10.5 Pro Edition" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Tableta 1:</strong> iPad Air 10.9" | Precio: $600</p>
+                            <p class="descripcion-producto">Ideal para estudiantes y profesionales creativos. Compatible con Apple Pencil de segunda generación.</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-tab1-p">DISPONIBLE</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-tab1-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
     <div class="categoria-acordeon">
-        <button class="boton-acordeon" onclick="alternarContenido('contenido-tablets')">
-            Tabletas y Accesorios
+        <button class="boton-acordeon" onclick="alternarContenido('contenido-laptops')">
+            4. Laptops
         </button>
-        <div id="contenido-tablets" class="contenido-acordeon">
-            <p><strong>Tableta 1:</strong> 10.5" Pro Edition | Precio: $450</p>
-            <div class="stock-info">
-                <span>Stock Sede Bejuma: <span id="stock-tab1-p">DISPONIBLE</span></span> | 
-                <span>Stock Sede Nirgua: <span id="stock-tab1-s">AGOTADO</span></span>
+        <div id="contenido-laptops" class="contenido-acordeon">
+            
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-dell-lap')">
+                    Marca: Dell
+                </button>
+                <div id="sub-dell-lap" class="contenido-subacordeon">
+                    
+                    <div class="detalle-producto">
+                        <img src="images/imagen_laptop1.jpg" alt="Laptop Dell Inspiron 15" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Laptop 1:</strong> Dell Inspiron 15 | Precio: $750</p>
+                            <p class="descripcion-producto">Portátil de uso general, con 16GB de RAM y procesador Intel Core i5. Perfecta para trabajo de oficina y universidad.</p>
+                            <div class="stock-info">
+                                <span>Stock Sede Principal: <span id="stock-lap1-p">DISPONIBLE</span></span> | 
+                                <span>Stock Sede Sucursal: <span id="stock-lap1-s">AGOTADO</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
+    <div class="categoria-acordeon">
+        <button class="boton-acordeon" onclick="alternarContenido('contenido-accesorios')">
+            5. Accesorios
+        </button>
+        <div id="contenido-accesorios" class="contenido-acordeon">
+            
+            <div class="detalle-producto">
+                <img src="images/imagen_lapiz_optico.jpg" alt="Lápiz Óptico Profesional" class="imagen-producto"> 
+                <div class="info-producto">
+                    <p><strong>Accesorio 1:</strong> Lápiz Óptico Profesional | Precio: $95</p>
+                    <p class="descripcion-producto">Universal, compatible con las principales marcas de tabletas y teléfonos con función de dibujo y precisión.</p>
+                    <div class="stock-info">
+                        <span>Stock Sede Principal: <span id="stock-acc1-p">DISPONIBLE</span></span> | 
+                        <span>Stock Sede Sucursal: <span id="stock-acc1-s">DISPONIBLE</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <h3 style="margin-top: 50px;">Información Importante de Envíos</h3>
     <p>Todos los envíos nacionales se realizan a través de [Nombre de la Empresa de Mensajería] con costo y seguro detallado en nuestra calculadora de cuotas.</p>
 </section>
