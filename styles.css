@@ -149,7 +149,7 @@ header {
 
 /* Colores para el estado del stock */
 /* Aplicaremos colores específicos a los IDs que pusimos en el HTML */
-#stock-tv1-p, #stock-tv2-p, #stock-tv2-s, #stock-telA-p, #stock-telA-s, #stock-telB-s, #stock-tab1-p, #stock-D  {
+#stock-tv1-p, #stock-tv2-p, #stock-tv2-s, #stock-telA-p, #stock-telA-s, #stock-telB-s, #stock-tab1-p, #stock-D, #no-stock  {
     color: green; /* DISPONIBLE */
     font-weight: 900;
 }
