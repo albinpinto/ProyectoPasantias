@@ -20,24 +20,34 @@
             <p>Breve descripción de la compañía, su historia y su actividad.</p>
         </section>
 
-        <section id="contacto-sedes">
+<section id="contacto-sedes">
     <h2>Información y Contacto de Sedes</h2>
     <p>Haga clic en una sede para ver sus datos de contacto:</p>
 
     <div class="botones-sedes">
-        <button onclick="mostrarSede('sede-principal')">Contacto Sede Bejuma</button>
-        <button onclick="mostrarSede('sede-secundaria')">Contacto Sede Nirgua</button>
+        <button onclick="mostrarSede('sede-principal')">Contacto Sede Principal</button>
+        <button onclick="mostrarSede('sede-secundaria')">Contacto Sede Sucursal</button>
     </div>
 
-    <div id="Sede-principal" class="info-sede" style="display: none;">
+    <div id="sede-principal" class="info-sede" style="display: none;">
         <h3>Sede Bejuma</h3>
-        <p><strong>Teléfono:</strong> +58 (424) 520-7708</p>
+        <p>
+            <strong>Teléfono:</strong> 
+            <a href="https://wa.me/584245207708" target="_blank">
+                +58 (424) 520-7708
+            </a>
+        </p>
         <p><strong>Dirección:</strong> Av. bolivar, CC Nasser Local N° 3 Diagonal a la licoreria Los Dos Amigos. Bejima Estado Carabobo.</p>
     </div>
 
-    <div id="Sede-secundaria" class="info-sede" style="display: none;">
+    <div id="sede-secundaria" class="info-sede" style="display: none;">
         <h3>Sede Nirgua</h3>
-        <p><strong>Teléfono:</strong> +58 (424) 520-7708</p>
+        <p>
+            <strong>Teléfono:</strong> 
+            <a href="https://wa.me/584245207708" target="_blank">
+                +58 (424) 520-7708
+            </a>
+        </p>
         <p><strong>Dirección:</strong> Av. bolivar, al Lado del Banco de Venezuela (MOVISTAR) Nirgua.</p>
     </div>
 
@@ -819,10 +829,15 @@
                 </button>
                 <div id="sub-tecno" class="contenido-subacordeon">
                     <div class="detalle-producto">
-                        <img src="images/placeholder_tec1.jpg" alt="[MODELO TECNO 1]" class="imagen-producto"> 
+                        <img src="images/Tecno_Spark_GO_2.jpg" alt="[MODELO TECNO 1]" class="imagen-producto"> 
                         <div class="info-producto">
-                            <p><strong>Modelo 1:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
-                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <p><strong>Tecno Spark GO 2</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" HD+, 120Hz.<br>
+                                •Procesador: UNISOC T7250.<br>
+                                •Cámara Principal: 13MP con IA.<br>
+                                •Batería: 5000 mAh.<br>                       
+                            </p>
                             <div class="stock-info">
                                 <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
                             </div>
@@ -830,10 +845,17 @@
                     </div>
                     <hr>
                     <div class="detalle-producto">
-                        <img src="images/placeholder_tec2.jpg" alt="[MODELO TECNO 2]" class="imagen-producto"> 
+                        <img src="images/Tecno_Spark_40c.jpg" alt="[MODELO TECNO 2]" class="imagen-producto"> 
                         <div class="info-producto">
-                            <p><strong>Modelo 2:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
-                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <p><strong>Tecno Spark 40c</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" HD+, 120Hz.<br>
+                                •Procesador: Helio G81.<br>
+                                •Cámara Principal: 13MP Dual con IA.<br>
+                                •Batería: 6000 mAh.<br>
+                                •Carga Rápida: 18W.<br>
+                                •Resistencia: IP64.<br>                   
+                            </p>
                             <div class="stock-info">
                                 <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
                             </div>
@@ -841,10 +863,17 @@
                     </div>
                     <hr>
                     <div class="detalle-producto">
-                        <img src="images/placeholder_tec3.jpg" alt="[MODELO TECNO 3]" class="imagen-producto"> 
+                        <img src="images/Tecno_Spark_40_Pro.jpg" alt="[MODELO TECNO 3]" class="imagen-producto"> 
                         <div class="info-producto">
-                            <p><strong>Modelo 3:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
-                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <p><strong>Tecno Spark 40 Pro</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.78" AMOLED, 144Hz.<br>
+                                •Procesador: MediaTek Helio G100 Ultimate.<br>
+                                •Cámara Principal: 50MP.<br>
+                                •Batería: 5200 mAh.<br>
+                                •Carga Rápida: 45W.<br>
+                                •Resistencia: IP64.<br>               
+                            </p>
                             <div class="stock-info">
                                 <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
                             </div>
@@ -852,48 +881,24 @@
                     </div>
                     <hr>
                     <div class="detalle-producto">
-                        <img src="images/placeholder_tec4.jpg" alt="[MODELO TECNO 4]" class="imagen-producto"> 
+                        <img src="images/Tecno_Spark_40_Pro_Plus.jpg" alt="[MODELO TECNO 4]" class="imagen-producto"> 
                         <div class="info-producto">
-                            <p><strong>Modelo 4:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
-                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
+                            <p><strong>Tecno Spark 40 Pro Plus</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.78" 3D AMOLED 1.5k, 144Hz.<br>
+                                •Procesador: MediaTek Helio G200.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Batería: 5200 mAh.<br>
+                                •Carga Rápida: 45W.<br>                
+                                •Carga Inalámbrica: 30W.<br>
+                                •Carga Inalámbrica Inversa: 5W.<br>                             
+                                •Resistencia: IP64.<br>
+                            </p>
                             <div class="stock-info">
                                 <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
                             </div>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="detalle-producto">
-                        <img src="images/placeholder_tec5.jpg" alt="[MODELO TECNO 5]" class="imagen-producto"> 
-                        <div class="info-producto">
-                            <p><strong>Modelo 5:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
-                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
-                            <div class="stock-info">
-                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="detalle-producto">
-                        <img src="images/placeholder_tec6.jpg" alt="[MODELO TECNO 6]" class="imagen-producto"> 
-                        <div class="info-producto">
-                            <p><strong>Modelo 6:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
-                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
-                            <div class="stock-info">
-                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="detalle-producto">
-                        <img src="images/placeholder_tec7.jpg" alt="[MODELO TECNO 7]" class="imagen-producto"> 
-                        <div class="info-producto">
-                            <p><strong>Modelo 7:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
-                            <p class="descripcion-producto">[Añadir descripción aquí]</p>
-                            <div class="stock-info">
-                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
-                            </div>
-                        </div>
-                    </div>
+                    </div>                    
                 </div>
             </div>
 
@@ -925,25 +930,81 @@
     </div>
     
     <div class="categoria-acordeon">
-        <button class="boton-acordeon" onclick="alternarContenido('contenido-tablets')">
-            3. Tabletas
-        </button>
-        <div id="contenido-tablets" class="contenido-acordeon">
-            
-            <div class="subcategoria-acordeon">
-                <button class="boton-subacordeon" onclick="alternarContenido('sub-apple-tab')">
-                    Marca: Apple
-                </button>
-                <div id="sub-apple-tab" class="contenido-subacordeon">
-                    
-                    <div class="detalle-producto">
-                        <img src="images/imagen_tab1.jpg" alt="Tableta 10.5 Pro Edition" class="imagen-producto"> 
-                        <div class="info-producto">
-                            <p><strong>Tableta 1:</strong> iPad Air 10.9" | Precio: $600</p>
-                            <p class="descripcion-producto">Ideal para estudiantes y profesionales creativos. Compatible con Apple Pencil de segunda generación.</p>
-                            <div class="stock-info">
-                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
-                            </div>
+    <button class="boton-acordeon" onclick="alternarContenido('contenido-tablets')">
+        3. Tabletas
+    </button>
+    
+    <div id="contenido-tablets" class="contenido-acordeon">
+                      
+        <div class="subcategoria-acordeon">
+            <button class="boton-subacordeon" onclick="alternarContenido('sub-galaxytab')">
+                Marca: SAMSUNG
+            </button>
+            <div id="sub-galaxytab" class="contenido-subacordeon">
+                <div class="detalle-producto">
+                    <img src="images/Samsung_Tab_A9.jpg" alt="[MODELO GALAXY TAB 1]" class="imagen-producto"> 
+                    <div class="info-producto">
+                        <p><strong>Samsung Tab 9A</p>
+                        <p class="descripcion-producto">
+                            •Pantalla: 8.7" LCD, 60Hz.<br>
+                            •Procesador: MediaTek Helio G99.<br>
+                            •Cámara Principal: 8MP.<br>
+                            •Batería: 5100 mAh.<br>
+                            •Memoria: 8GB RAM / 128GB ROM.<br>
+                            •Audio: Altavoces estéreo con Dolby Atmos.<br>
+                            •Diseño: Cuerpo de metal.<br>
+                            •Conectividad: Opciones Wi-Fi y LTE (4G).<br>
+                        </p>
+                        <div class="stock-info">
+                            <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>       
+        
+        <div class="subcategoria-acordeon">
+            <button class="boton-subacordeon" onclick="alternarContenido('sub-honortab')">
+                Marca: HONOR 
+            </button>
+            <div id="sub-honortab" class="contenido-subacordeon">
+                <div class="detalle-producto">
+                    <img src="images/Honor_pad_X8a.jpg" alt="[MODELO HONOR TAB 1]" class="imagen-producto"> 
+                    <div class="info-producto">
+                        <p><strong>Honor Pad X8a</p>
+                        <p class="descripcion-producto">
+                            •Pantalla: 11" FHD+, 90Hz.<br>
+                            •Procesador: Qualcomm Snapdragon 680.<br>
+                            •Cámara Principal: 5MP.<br>
+                            •Batería: 8300 mAh.<br>
+                            •Memoria: 4GB RAM / 128GB ROM.<br>
+                            •Audio: Altavoces Duales.<br>
+                            •Software: MagicOS 8.<br>
+                            •Peso/Grosor: 495g / 7.25mm.<br>
+                        </p>
+                        <div class="stock-info">
+                            <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="detalle-producto">
+                    <img src="images/Honor_Pad_X9a.jpg" alt="[MODELO HONOR TAB 2]" class="imagen-producto"> 
+                    <div class="info-producto">
+                        <p><strong>Honor Pad X9a</p>
+                        <p class="descripcion-producto">
+                            •Pantalla: 11.5" 120Hz, con resolución 2.5K.<br>
+                            •Procesador: Qualcomm Snapdragon 685.<br>
+                            •Cámara Principal: 8MP.<br>
+                            •Audio: Cuatro Altavoces.<br>
+                            •Batería: 8300 mAh.<br>
+                            •Carga Rápida: 35W.<br>
+                            •Memoria: 8+8GB RAM / 128GB ROM.<br>
+                            •Peso/Grosor: 475g / 6.77mm.<br>
+                            •Software: MagicOS 9.<br>
+                        </p>
+                        <div class="stock-info">
+                            <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
                         </div>
                     </div>
                 </div>
@@ -952,53 +1013,148 @@
     </div>
     
     <div class="categoria-acordeon">
-        <button class="boton-acordeon" onclick="alternarContenido('contenido-laptops')">
-            4. Laptops
-        </button>
-        <div id="contenido-laptops" class="contenido-acordeon">
-            
-            <div class="subcategoria-acordeon">
-                <button class="boton-subacordeon" onclick="alternarContenido('sub-dell-lap')">
-                    Marca: Dell
-                </button>
-                <div id="sub-dell-lap" class="contenido-subacordeon">
-                    
-                    <div class="detalle-producto">
-                        <img src="images/imagen_laptop1.jpg" alt="Laptop Dell Inspiron 15" class="imagen-producto"> 
-                        <div class="info-producto">
-                            <p><strong>Laptop 1:</strong> Dell Inspiron 15 | Precio: $750</p>
-                            <p class="descripcion-producto">Portátil de uso general, con 16GB de RAM y procesador Intel Core i5. Perfecta para trabajo de oficina y universidad.</p>
-                            <div class="stock-info">
-                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
-                            </div>
+    <button class="boton-acordeon" onclick="alternarContenido('contenido-computadoras')">
+        4. Laptops
+    </button>
+    
+    <div id="contenido-computadoras" class="contenido-acordeon">
+        
+        <div class="subcategoria-acordeon">
+            <button class="boton-subacordeon" onclick="alternarContenido('sub-chuwi')">
+                Marca: CHUWI
+            </button>
+            <div id="sub-chuwi" class="contenido-subacordeon">
+                <div class="detalle-producto">
+                    <img src="images/Chuwi_HeroBook_Plus_1.jpg" alt="[MODELO CHUWI 1]" class="imagen-producto">
+                    <img src="images/Chuwi_HeroBook_Plus_2.jpg" alt="[MODELO CHUWI 1]" class="imagen-producto">
+                    <img src="images/Chuwi_Herobook_Plus_3.jpg" alt="[MODELO CHUWI 1]" class="imagen-producto"> 
+                    <div class="info-producto">
+                        <p><strong>Chuwi HeroBook Plus</p>
+                        <p class="descripcion-producto">
+                            •Pantalla: 15.6" IPS FHD <br>
+                            •Relacion de Aspecto: 16:9.<br>
+                            •Procesador: Intel Celeron N4020.<br>
+                            •Memoria: 8GB LPDDR4 RAM.<br>
+                            •Almacenamiento: 256GB SSD M.2.<br>
+                            •Batería: 38 Wh.<br>                         
+                            •Conectividad: Wi-Fi 5, Bluetooth 4.2.
+                            Puertos: 2 USB-C, 1 USB-A 3.0, 2 USB-A 2.0, HDMI, RJ45 LAN Port, conector de audio de 3.5 mm, Lock Slot.<br>
+                            •Sistema Operativo: Windows 11.<br>
+                        </p>
+                        <div class="stock-info">
+                            <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="categoria-acordeon">
-        <button class="boton-acordeon" onclick="alternarContenido('contenido-accesorios')">
-            5. Accesorios
-        </button>
-        <div id="contenido-accesorios" class="contenido-acordeon">
-            
-            <div class="detalle-producto">
-                <img src="images/imagen_lapiz_optico.jpg" alt="Lápiz Óptico Profesional" class="imagen-producto"> 
-                <div class="info-producto">
-                    <p><strong>Accesorio 1:</strong> Lápiz Óptico Profesional | Precio: $95</p>
-                    <p class="descripcion-producto">Universal, compatible con las principales marcas de tabletas y teléfonos con función de dibujo y precisión.</p>
-                    <div class="stock-info">
-                        <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+        
+        <div class="subcategoria-acordeon">
+            <button class="boton-subacordeon" onclick="alternarContenido('sub-acer')">
+                Marca: ACER
+            </button>
+            <div id="sub-acer" class="contenido-subacordeon">
+                <div class="detalle-producto">
+                    <img src="images/placeholder_acer1.jpg" alt="[MODELO ACER 1]" class="imagen-producto"> 
+                    <div class="info-producto">
+                        <p><strong>Modelo 1:</strong> [NOMBRE MODELO] | Precio: $[000]</p>
+                        <p class="descripcion-producto">
+                            •Pantalla: 15.6" FHD.<br>
+                            •Relacion de Aspecto: 16:9.<br>
+                            •Procesador: Intel Inside N100.<br>
+                            •Memoria: RAM 8 GB LPDDR5.<br>
+                            •Almacenamiento: 256 GB SSD.<br> 
+                            •Batería: 38 Wh.<br>                    
+                            •Conectividad: Wi-Fi 6, Bluetooth 5.2.
+                            Puertos: 1 USB-C 3.0, 1 USB-C 2.0, 2 USB-A 3.0, 1 USB-A 2.0, HDMI, RJ45 LAN Port, conector de audio de 3.5 mm.<br>
+                            •Sistema operativo Windows 11.<br>
+                        </p>
+                        <div class="stock-info">
+                            <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+    </div>
+    </div>
+    
+    <div class="categoria-acordeon">
+    <button class="boton-acordeon" onclick="alternarContenido('contenido-accesorios')">
+        5. Accesorios
+    </button>
+    
+    <div id="contenido-accesorios" class="contenido-acordeon">
+        
+        <div class="detalle-producto">
+            <img src="images/Cargador_Samsung_ USB_C_25W.avif" alt="[NOMBRE ACCESORIO 1]" class="imagen-producto"> 
+            <div class="info-producto">
+                <p><strong>Cargador Samsung Original USB-C 25W</p>
+                <p class="descripcion-producto">
+                    •Carga Superrápida máx. 25 W, PD 3,0 PPS máx. 25 W, consumo de energía en espera cero (5mW)
+                </p>
+                <div class="stock-info">
+                    <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="detalle-producto">
+            <img src="images/Cargador_Samsung_ USB_C_45W.avif" alt="[NOMBRE ACCESORIO 2]" class="imagen-producto"> 
+            <div class="info-producto">
+                <p><strong>Cargador Samsung Original 45W USB-C Cable / 1.8m  </p>
+                <p class="descripcion-producto">
+                    •Super Fast Charging 2.0 max. 45W, PD 3.0 PDO/PPS max. 45W<br>
+                    •Incluye cable USB-C a USB-C de 1.8m (Soporta 45w)<br>
+                </p>
+                <div class="stock-info">
+                    <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="detalle-producto">
+            <img src="images/Cargador_Samsung_ USB_C_65W_Trio.avif" alt="[NOMBRE ACCESORIO 3]" class="imagen-producto"> 
+            <div class="info-producto">
+                <p><strong>Cargador Samsung Original USB-C 65W Trio</p>
+                <p class="descripcion-producto">
+                    (USB-C1) Super Fast Charging 2.0 max. 45 W, PD 3.0 PDO max. 65 W, 
+                    PPS max. 45 W / (USB-C2) Super Fast Charging max. 25 W, 
+                    PD 3.0 PDO,PPS max. 25 W / (USB-A) AFC,QC max. 15 W / (C1+C2)
+                     40 W + 25 W / (C1+A) 50 W + 15 W / (C2+A) 25 W + 15 W / (all) 35 W + 25 W + 5 W
+                </p>
+                <div class="stock-info">
+                    <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="detalle-producto">
+            <img src="images/Cargador_Apple_USB_C_20W.jpg" alt="[NOMBRE ACCESORIO 4]" class="imagen-producto"> 
+            <div class="info-producto">
+                <p><strong>Cargador Apple Original USB-C 20W</p>
+                <p class="descripcion-producto">
+                    El adaptador de corriente USB-C de 20 W de Apple te permite cargar tu dispositivo
+                     de manera rápida y eficiente en cualquier lugar. Aunque es compatible con cualquier
+                      dispositivo que tenga un puerto USB-C, Apple recomienda usarlo con el iPad Pro y el
+                       iPad Air para obtener una carga óptima. También puedes usarlo con el iPhone 8 o posterior
+                        para aprovechar la funcionalidad de carga rápida.
+                </p>
+                <div class="stock-info">
+                    <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
     </div>
 
     <h3 style="margin-top: 50px;">Información Importante de Envíos</h3>
-    <p>Todos los envíos nacionales se realizan a través de [Nombre de la Empresa de Mensajería] con costo y seguro detallado en nuestra calculadora de cuotas.</p>
+    <p>Todos los envíos nacionales se realizan a través de MRW.</p>
 </section>
         
     </main>
