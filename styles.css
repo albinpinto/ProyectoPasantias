@@ -1,13 +1,13 @@
 body {
-    background-color: #f0f0f0; /* Fondo gris claro */
+    background-color: #cccccca4; /* Fondo gris claro */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #000000; /* Color azul (ejemplo de color de la marca) */
-    color: rgba(0, 253, 0, 0.849);
+    background-color: #000000f6; /* Color azul (ejemplo de color de la marca) */
+    color: rgba(56, 223, 0, 0.945);
     padding: 20px;
     text-align: center;
 }
@@ -16,9 +16,9 @@ header {
     max-width: 450px;
     margin: 40px auto; /* Centra el bloque */
     padding: 30px;
-    border: 1px solid #ddd;
+    border: 1px solid #333232;
     border-radius: 10px;
-    background-color: #ffffff; 
+    background-color: #e6e5e5a4; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -31,7 +31,7 @@ header {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #0a0a0a;
     border-radius: 5px;
     box-sizing: border-box; /* Importante para que el padding no desborde el ancho */
 }
@@ -41,7 +41,7 @@ header {
     background-color: #28a745; /* Botón verde */
     color: white;
     padding: 12px;
-    border: none;
+    border: 1px solid #333232;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -51,7 +51,7 @@ header {
 }
 
 #calculadora button:hover {
-    background-color: #218838;
+    background-color: rgba(54, 223, 0, 0.945);
 }
 
 #resultadoCalculadora {
@@ -66,15 +66,15 @@ header {
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc;
     text-align: center;
 }
 
 .botones-sedes button {
-    background-color: #007bff; /* Color azul para los botones de sede */
-    color: white;
+    background-color: #218838; /* Color azul para los botones de sede */
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
-    border: none;
+    border: 1px solid #333232;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -83,13 +83,13 @@ header {
 }
 
 .botones-sedes button:hover {
-    background-color: #0056b3;
+    background-color: rgba(54, 223, 0, 0.945);
 }
 
 .info-sede {
     margin-top: 20px;
     padding: 20px;
-    border: 2px solid #007bff;
+    border: 2px solid #35373a;
     border-radius: 8px;
     text-align: left;
 }
@@ -101,7 +101,7 @@ header {
 }
 
 .boton-acordeon {
-    background-color: #f7f7f7; /* Fondo del botón */
+    background-color: #ffffff; /* Fondo del botón */
     color: #444; 
     cursor: pointer;
     padding: 18px;
@@ -111,7 +111,7 @@ header {
     outline: none;
     font-size: 18px;
     transition: 0.4s;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ffffff;
     font-weight: bold;
 }
 
@@ -121,8 +121,8 @@ header {
 
 .contenido-acordeon {
     padding: 15px;
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #e6e5e5a4;
+    border: 1px solid #bbbaba;
     border-top: none;
     /* Esto es clave: inicialmente ocultamos con CSS, JS se encarga de cambiar a 'block' */
     display: none; 
@@ -187,7 +187,7 @@ header {
     max-width: 600px;
     margin: 20px auto;
     padding: 25px;
-    border: 3px solid #ff9900;
+    border: 3px solid #000000;
     border-radius: 10px;
     background-color: #fff9f0;
     text-align: left;
@@ -195,7 +195,7 @@ header {
 
 .info-financiamiento h3 {
     text-align: center;
-    color: #cc7a00;
+    color: #000000;
     margin-top: 0;
 }
 
@@ -220,7 +220,7 @@ header {
 
 .boton-subacordeon {
     background-color: #e6f7ff; /* Fondo más claro para indicar anidación */
-    color: #007bff; 
+    color: #002fff; 
     cursor: pointer;
     padding: 12px 18px;
     width: 100%;
@@ -242,7 +242,7 @@ header {
     /* El contenido anidado debe tener un padding diferente */
     padding: 10px 15px 15px 15px;
     background-color: #ffffff; 
-    border-left: 3px solid #007bff; /* Barra lateral para indicar dónde empieza/acaba */
+    border-left: 3px solid #5c665a98; /* Barra lateral para indicar dónde empieza/acaba */
     margin-bottom: 10px;
     /* Esto es manejado por JavaScript, pero es bueno tener la referencia visual */
     
